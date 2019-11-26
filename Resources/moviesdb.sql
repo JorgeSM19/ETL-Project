@@ -3,6 +3,7 @@
 
 
 CREATE TABLE "MOVIE_DATA" (
+    "index" INT PRIMARY KEY,
     "Title" VARCHAR   NOT NULL,
     "Production_Company" VARCHAR   NOT NULL,
     "Genre" VARCHAR   NOT NULL,
@@ -17,13 +18,14 @@ CREATE TABLE "MOVIE_DATA" (
 );
 
 CREATE TABLE "Credits_Data" (
-    "Director" VARCHAR   NOT NULL,
-    "Leading_Role" VARCHAR   NOT NULL,
-    "Supporting_Role" VARCHAR   NOT NULL,
-    "Supporting_Role_2" VARCHAR   NOT NULL,
-    "Producer" VARCHAR   NOT NULL,
-    "DP" VARCHAR   NOT NULL,
-    "Writer" VARCHAR   NOT NULL,
-    "Music_Composer" VARCHAR   NOT NULL
+    "index" INT PRIMARY KEY,
+    "Director" VARCHAR,
+    "Leading_Role" VARCHAR ,
+    "Supporting_Role" VARCHAR ,
+    "Supporting_Role_2" VARCHAR ,
+    "Producer" VARCHAR ,
+    "DP" VARCHAR ,
+    "Writer" VARCHAR ,
+    "Music_Composer" VARCHAR
 );
 
