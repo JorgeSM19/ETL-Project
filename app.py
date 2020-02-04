@@ -6,6 +6,12 @@ import psycopg2
 
 app = Flask(__name__)
 
+app = Flask(__name__,
+  static_url_path='', 
+  static_folder='static')
+
+app.config['JSON_AS_ASCII'] = False
+
 engine = create_engine('postgresql://postgres:ximepss030311@localhost:5432/Movies_DB')
 
 @app.route("/")
